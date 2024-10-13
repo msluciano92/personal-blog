@@ -18,7 +18,7 @@
       </div>
 
       <div class="bio-section">
-         <p>Passionate product owner with over 8 years of software development experience and a strong technical background. This expertise empowers me to make decisions and drive innovation across industries. By leveraging agile methodologies, I deliver exceptional user experiences that align with business goals and meet customer needs.
+         <p>Passionate product owner with over <span id="experienceYears"></span> years of software development experience and a strong technical background. This expertise empowers me to make decisions and drive innovation across industries. By leveraging agile methodologies, I deliver exceptional user experiences that align with business goals and meet customer needs.
          </p>
       </div>
 
@@ -37,6 +37,7 @@
 
    <script>
       document.getElementById("year").innerHTML = new Date().getFullYear();
+      document.getElementById("experienceYears").innerHTML = new Date().getFullYear() - new Date("01/02/2016").getFullYear();
    </script>
    <script type="application/ld+json">
       {
