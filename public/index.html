@@ -16,9 +16,10 @@
          <p class="title">Software Engineer | Technical Product Owner | Tech Enthusiast</p>
       </div>
 
-      <!-- <div class="bio-section">
-         <p>Brief bio about your experience, skills, and what you're passionate about in software development.</p>
-      </div> -->
+      <div class="bio-section">
+         <p>Passionate product owner with over 8 years of software development experience and a strong technical background. This expertise empowers me to make decisions and drive innovation across industries. By leveraging agile methodologies, I deliver exceptional user experiences that align with business goals and meet customer needs.
+         </p>
+      </div>
 
       <div class="social-section">
          <h2>Connect with me</h2>
@@ -30,7 +31,11 @@
    </div>
 
    <footer>
-      <p>&copy; Marcos Luciano 2024</p>
+      <p>&copy; Marcos Luciano <span id="year"></span></p>
    </footer>
+
+   <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+   </script>
 </body>
 </html>
