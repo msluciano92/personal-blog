@@ -1,0 +1,118 @@
+/* General styling for 2024 minimalist design */
+body {
+   font-family: 'Helvetica Neue', sans-serif;
+   background-color: #f9f9f9;  /* Light, neutral background */
+   color: #333;  /* Soft dark text for better contrast */
+   margin: 0;
+   padding: 0;
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;  /* Full viewport height */
+}
+
+.container {
+   text-align: center;  /* Center all text and content */
+   max-width: 800px;
+   margin: auto;  /* Ensures container is centered vertically and horizontally */
+   padding: 20px;
+}
+
+.profile-section {
+   margin-bottom: 2rem;  /* Adds space between profile and bio */
+}
+
+.profile-image {
+   width: 150px;
+   height: 150px;
+   border-radius: 50%;  /* Makes the profile image circular */
+   object-fit: cover;  /* Ensures the image fits well inside the circle */
+   border: 4px solid #007BFF;  /* Adds a blue border for emphasis */
+   margin-bottom: 1.5rem;
+}
+
+.name {
+   font-size: 2.5rem;  /* Larger text for the name */
+   font-weight: 600;
+   margin-bottom: 0.5rem;
+   color: #333;
+}
+
+.title {
+   font-size: 1.2rem;
+   font-weight: 300;  /* Light weight for the title */
+   color: #666;  /* Soft gray color for a subtle, professional look */
+   margin-bottom: 2rem;
+}
+
+.bio-section {
+   font-size: 1.1rem;
+   color: #555;
+   margin-bottom: 2rem;
+   line-height: 1.6;  /* Increase spacing between lines for readability */
+}
+
+.social-section h2 {
+   font-size: 1.5rem;
+   margin-bottom: 1rem;
+   color: #333;
+}
+
+.social-links {
+   list-style: none;  /* Remove bullets from the list */
+   padding: 0;
+   margin: 0;
+}
+
+.social-links li {
+   display: inline-block;  /* Display icons inline */
+   margin: 0 15px;
+}
+
+.social-links a {
+   text-decoration: none;  /* Remove default link underline */
+   color: #007BFF;  /* Blue color for icons */
+   font-size: 2rem;  /* Increase the size of the icons */
+   transition: color 0.3s ease;  /* Smooth transition for hover effect */
+}
+
+.social-links a:hover {
+   color: #0056b3;  /* Darker blue when hovering */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+   .social-links a {
+      font-size: 1.5rem;  /* Adjust icon size on smaller screens */
+   }
+}
+
+/* Footer Fix */
+footer {
+   background-color: #333;
+   color: #aaa;
+   text-align: center;
+   padding: 1rem;
+   font-size: 0.9rem;
+   margin-top: auto;  /* Ensure the footer stays at the bottom */
+   width: 100%;  /* Take up full width of the screen */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+   .name {
+      font-size: 2rem;
+   }
+
+   .profile-image {
+      width: 120px;
+      height: 120px;
+   }
+
+   .bio-section {
+      font-size: 1rem;
+   }
+
+   .social-links a {
+      font-size: 1rem;
+   }
+}
