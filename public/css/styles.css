@@ -12,9 +12,9 @@ body {
 
 .container {
    text-align: center;  /* Center all text and content */
+   max-width: 800px;
    margin: auto;
-   padding: 10px;  /* Reduce padding for mobile */
-   max-width: 90%;  /* Allow more room on small screens */
+   padding: 20px;
 }
 
 .profile-section {
@@ -91,29 +91,61 @@ footer {
 }
 
 /* --- Mobile View Adjustments --- */
-.container {
-   padding: 10px;  /* Reduce padding for mobile */
-   max-width: 90%;  /* Allow more room on small screens */
+@media (max-width: 768px) {
+   .container {
+      padding: 10px;  /* Reduce padding for mobile */
+      max-width: 90%;  /* Allow more room on small screens */
+   }
+
+   .profile-image {
+      width: 120px;
+      height: 120px;
+   }
+
+   .name {
+      font-size: 2rem;  /* Slightly smaller for mobile */
+   }
+
+   .title {
+      font-size: 1.1rem;
+   }
+
+   .bio-section {
+      font-size: 1rem;  /* Adjust font size for better readability */
+   }
+
+   .social-links a {
+      font-size: 1.8rem;  /* Reduce icon size slightly */
+      margin: 0 10px;  /* Reduce spacing between icons */
+   }
 }
 
-.profile-image {
-   width: 120px;
-   height: 120px;
-}
+@media (max-width: 480px) {
+   .profile-image {
+      width: 100px;
+      height: 100px;
+   }
 
-.name {
-   font-size: 2rem;  /* Slightly smaller for mobile */
-}
+   .name {
+      font-size: 1.8rem;  /* Further adjustment for very small screens */
+   }
 
-.title {
-   font-size: 1.1rem;
-}
+   .title {
+      font-size: 1rem;
+   }
 
-.bio-section {
-   font-size: 1rem;  /* Adjust font size for better readability */
-}
+   .bio-section {
+      font-size: 0.9rem;  /* Further adjust for readability on small screens */
+      margin-bottom: 1.5rem;  /* Reduce margin to avoid too much space */
+   }
 
-.social-links a {
-   font-size: 1.8rem;  /* Reduce icon size slightly */
-   margin: 0 10px;  /* Reduce spacing between icons */
+   .social-links a {
+      font-size: 1.5rem;  /* Further reduce icon size for smaller screens */
+      margin: 0 8px;  /* Reduce spacing between icons */
+   }
+
+   footer {
+      font-size: 0.8rem;  /* Reduce footer text size */
+      padding: 0.8rem;
+   }
 }
