@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Digital Product Owner | Software Engineer | Strategic Leader</title>
+   <meta name="description" content="Passionate Product Owner with over 8 years in software development. Expertise in agile methodologies and cross-industry experience.">
+
+   <!-- Link to Font Awesome for icons -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   <link rel="stylesheet" href="css/styles.css"> <!-- Link to CSS file --></head>
+<body>
+   <div class="container">
+      <div class="profile-section">
+         <img src="images/profile.jpg" alt="User's profile photo - Product Owner and Software Developer" class="profile-image"> <!-- Circular profile image -->
+         <h1 class="name">Hi, I'm Marcos</h1>
+         <p class="title">Software Engineer | Digital Product Owner</p>
+      </div>
+
+      <div class="bio-section">
+         <p>
+            I am an <strong>Experienced Digital Product Owner</strong> with a 
+            <strong>strong technical background</strong> and over <strong><span id="experienceYears"></span> years 
+            of experience</strong> leading <strong>software development projects</strong> 
+            across various industries, including <strong>motor insurance</strong>, 
+            <strong>SaaS</strong>, and <strong>healthcare</strong>. My core expertise 
+            lies in <strong>product strategy</strong>, <strong>agile methodologies</strong>, 
+            and <strong>cross-functional collaboration</strong>, enabling me to deliver 
+            <strong>data-driven solutions</strong> that consistently improve both 
+            <strong>user experience</strong> and business outcomes.
+         </p>
+      
+         <p>
+            I excel at building and executing <strong>product roadmaps</strong> that align 
+            with business goals, market demands, and user needs. Through 
+            <strong>data analytics</strong>, <strong>market research</strong>, and ongoing 
+            <strong>stakeholder engagement</strong>, I ensure that product enhancements 
+            are innovative, efficient, and geared toward optimizing 
+            <strong>user-centric experiences</strong>. My strong understanding of 
+            <strong>user experience (UX) principles</strong> allows me to work closely 
+            with <strong>UX/UI design teams</strong>, crafting seamless and intuitive 
+            products that drive user satisfaction.
+         </p>
+      
+         <p>
+            With my hands-on approach to <strong>technical leadership</strong>, I guide 
+            development teams through complex challenges, ensuring timely and 
+            <strong>high-quality product deliveries</strong>. I actively engage in 
+            <strong>technical discussions</strong> and bridge the gap between business 
+            requirements and technical implementation, fostering clear communication and 
+            alignment across teams.
+         </p>
+      
+         <p>
+            As a leader, I am passionate about building <strong>high-performing teams</strong> 
+            that are <strong>diverse</strong> and <strong>collaborative</strong>. I cultivate 
+            an environment where <strong>innovation</strong> and 
+            <strong>continuous improvement</strong> thrive, empowering teams to take 
+            ownership and drive success. My ability to manage diverse stakeholders, both 
+            internal and external, ensures that every product delivers maximum impact, from 
+            ideation to launch and beyond.
+         </p>
+      
+         <p>
+            I'm driven by a commitment to excellence and a passion for creating 
+            <strong>user-centric products</strong> that meet business goals while solving 
+            real-world challenges.
+         </p>
+
+         <p>
+            <a href="/">Go back</a>
+         </p>
+      </div>
+   </div>
+
+   <footer>
+      <p>&copy; Marcos Luciano <span id="year"></span></p>
+   </footer>
+
+   <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+      document.getElementById("experienceYears").innerHTML = new Date().getFullYear() - new Date("01/02/2016").getFullYear();
+   </script>
+   <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Person",
+        "name": "Marcos Luciano",
+        "jobTitle": "Product owner",
+        "url": "https://marcosluciano.co/",
+        "sameAs": [
+          "https://www.linkedin.com/in/engineer-marcos-luciano/"
+        ]
+      }
+   </script>
+</body>
+</html>
